@@ -7,9 +7,15 @@ import type {
 } from "remixicon-react";
 import * as log from "loglevel";
 
-function IconLoadFailFallback(props: any) {
+// Definimos que este componente aceita apenas atributos válidos de um SVG
+interface IconFallbackProps extends React.SVGProps<SVGSVGElement> {}
+
+function IconLoadFailFallback(props: IconFallbackProps) {
+  // O TypeScript agora garante que 'props' contém apenas atributos de SVG válidos
   return <svg {...props} />;
 }
+
+
 
 function importIconImpl(
   importFn: () => Promise<{ default: React.ComponentType }>,
