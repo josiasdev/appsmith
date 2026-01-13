@@ -86,11 +86,18 @@ function PageSettings(props: { page: Page }) {
   );
 
   const [pageName, setPageName] = useState(page.pageName);
-  const [isPageNameSaving, setIsPageNameSaving] = useState(false);
   const [pageNameError, setPageNameError] = useState<string | null>(null);
 
   const [customSlug, setCustomSlug] = useState(page.customSlug);
-  const [isCustomSlugSaving, setIsCustomSlugSaving] = useState(false);
+
+
+  // A single state stores the field key when editing/saving.
+  const [savingField, setSavingField] = useState<string | null>(null);
+
+  // Derivation: checks if the current field is the one being saved.
+  const isPageNameSaving = savingField === 'pageName';
+  const isCustomSlugSaving = savingField === 'customSlug';
+
 
   const [staticPageSlug, setStaticPageSlug] = useState(page.uniqueSlug || "");
   const [staticPageSlugError, setStaticPageSlugError] = useState<string | null>(
