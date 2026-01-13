@@ -69,15 +69,19 @@ function DatePicker(props: DatePickerProps) {
 
   const onChangeHandler = (
     date: Date | null,
-    e: React.SyntheticEvent<any, Event> | undefined,
+    // We're restricting it to a generic HTML element, thus restoring DOM security.
+    e: React.SyntheticEvent<HTMLElement> | undefined,
   ) => {
     setSelectedDate(date);
+    // TypeScript now ensures compatibility in passing the event
     onChange && onChange(date, e);
 
     if (e) {
       setIsOpen(false);
     }
   };
+
+
 
   return (
     <BaseDatePicker
