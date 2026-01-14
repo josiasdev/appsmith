@@ -16,8 +16,8 @@ import {
 import { INVALID_NAME_ERROR, createMessage } from "ee/constants/messages";
 
 export enum EditInteractionKind {
-  SINGLE,
-  DOUBLE,
+  SINGLE = 0,
+  DOUBLE = 1,
 }
 
 interface EditableTextProps {

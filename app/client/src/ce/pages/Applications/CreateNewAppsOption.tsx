@@ -127,7 +127,11 @@ const CreateNewAppsOption = ({
   };
 
   const onClickSkipButton = () => {
-    const applicationObject = application!;
+    if (!application) {
+    throw new Error("Application must exist when clicking Skip");
+  }
+
+  const applicationObject = application;
 
     urlBuilder.updateURLParams(
       {

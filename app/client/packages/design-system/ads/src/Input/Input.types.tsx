@@ -1,8 +1,7 @@
 import type { TextFieldProps } from "@react-types/textfield";
 import type { IconProps } from "../Icon";
-import type { Sizes } from "../__config__/types";
 
-export type InputSizes = Extract<Sizes, "sm" | "md">;
+export type InputSizes = "sm" | "md";
 
 export type InputTypes =
   | "text"

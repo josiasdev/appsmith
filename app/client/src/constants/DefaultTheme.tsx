@@ -40,8 +40,8 @@ export const IntentIcons: Record<Intent, React.ReactNode> = {
 };
 
 export enum Skin {
-  LIGHT,
-  DARK,
+  LIGHT = 0,
+  DARK = 1,
 }
 
 export const truncateTextUsingEllipsis = css`

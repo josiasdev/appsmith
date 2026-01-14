@@ -164,10 +164,10 @@ function APIOrSaasPlugins(props: CreateAPIOrSaasPluginsProps) {
         handleCreateNew(actionType);
         break;
       case API_ACTION.CREATE_DATASOURCE_FORM: {
-        if (params) {
+        if (params && params.pluginId && params.type) {
           props.createTempDatasourceFromForm({
-            pluginId: params.pluginId!,
-            type: params.type!,
+            pluginId: params.pluginId,
+            type: params.type,
           });
         }
 

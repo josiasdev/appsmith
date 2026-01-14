@@ -9,8 +9,8 @@ import { getTypographyByKey } from "@appsmith/ads-old";
 import { useEventCallback } from "usehooks-ts";
 
 export enum DebuggerLinkUI {
-  ENTITY_TYPE,
-  ENTITY_NAME,
+  ENTITY_TYPE = 0,
+  ENTITY_NAME = 1,
 }
 
 const EntityNameLink = styled(Link)`

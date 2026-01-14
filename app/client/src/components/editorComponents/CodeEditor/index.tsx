@@ -256,7 +256,7 @@ export type EditorProps = EditorStyleProps &
     // On focus and blur event handler
     onEditorBlur?: () => void;
     onEditorFocus?: () => void;
-    lineCommentString?: string;
+    lineCommentString: string;
     evaluatedPopUpLabel?: string;
     removeHoverAndFocusStyle?: boolean;
 
@@ -392,7 +392,7 @@ class CodeEditor extends Component<Props, State> {
         [getCodeCommentKeyMap()]: handleCodeComment(
           // We've provided the default props value for lineCommentString
           // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-          this.props.lineCommentString!,
+          this.props.lineCommentString,
         ),
         [getSaveAndAutoIndentKey()]: (editor) => {
           saveAndAutoIndentCode(editor);
@@ -476,14 +476,13 @@ class CodeEditor extends Component<Props, State> {
         CodeEditor.updateMarkings(
           editor,
           // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-          this.props.marking!, // ! since defaultProps are set
+          this.props.marking, // ! since defaultProps are set
           this.props.entitiesForNavigation,
         );
 
         this.hinters = CodeEditor.startAutocomplete(
           editor,
-          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-          this.props.hinting!, // ! since defaultProps are set
+          this.props.hinting,
           this.props.entitiesForNavigation, // send navigation here
         );
 
@@ -664,7 +663,7 @@ class CodeEditor extends Component<Props, State> {
         CodeEditor.updateMarkings(
           this.editor,
           // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-          this.props.marking!, // ! since defaultProps are set
+          this.props.marking, // ! since defaultProps are set
           this.props.entitiesForNavigation,
         );
       }
@@ -1342,7 +1341,7 @@ class CodeEditor extends Component<Props, State> {
       CodeEditor.updateMarkings(
         this.editor,
         // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        this.props.marking!, // ! since defaultProps are set
+        this.props.marking, // ! since defaultProps are set
         this.props.entitiesForNavigation,
         changeObj.from,
         changeObj.to,

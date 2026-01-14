@@ -219,7 +219,7 @@ const TemplateFilters = (props: FilterWrapperProps) => {
   useEffect(() => {
     if (props.initialFilters) {
       Object.keys(props.initialFilters).forEach((filter) => {
-        dispatch(filterTemplates(filter, props.initialFilters![filter]));
+        dispatch(filterTemplates(filter, props.initialFilters[filter]));
       });
     } else {
       dispatch(filterTemplates("functions", ["All"]));

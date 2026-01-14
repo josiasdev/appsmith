@@ -264,10 +264,12 @@ export const PartialExportModal = () => {
   };
 
   const onExportClick = () => {
+     if (!canvasWidgets) return;
+
     dispatch(
       partialExportWidgets({
         ...selectedParams,
-        widgets: selectOnlyParentIds(canvasWidgets!, selectedParams.widgets),
+        widgets: selectOnlyParentIds(canvasWidgets, selectedParams.widgets),
       }),
     );
     setSelectedParams(selectedParamsInitValue);

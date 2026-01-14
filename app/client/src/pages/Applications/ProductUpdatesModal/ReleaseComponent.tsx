@@ -84,8 +84,8 @@ interface ReleaseProps {
 }
 
 enum ReleaseComponentViewState {
-  "collapsed",
-  "expanded",
+  "collapsed" = 0,
+  "expanded" = 1,
 }
 
 const ReadMoreContainer = styled.div`

@@ -63,15 +63,17 @@ export default function EchartComponent(props: MapChartComponentProps) {
   const chartInstance = useRef<echarts.ECharts | null>();
 
   useEffect(() => {
-    chartInstance.current = echarts.init(
-      chartContainer.current!,
-      {},
-      {
-        renderer: "svg",
-        width: props.width,
-        height: props.height,
-      },
-    );
+    if (chartContainer.current) {
+      chartInstance.current = echarts.init(
+        chartContainer.current,
+        {},
+        {
+          renderer: "svg",
+          width: props.width,
+          height: props.height,
+        },
+      );
+    }
   }, [chartContainer]);
 
   useEffect(() => {

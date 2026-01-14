@@ -1,0 +1,27 @@
+id,file,Smell,Details,Smell_num
+786,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\AppIDE\components\AppSettings\components\PageSettings.tsx,Multiple Booleans For State,Lines 89-89,3
+787,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\AppIDE\components\AppSettings\components\PageSettings.tsx,Multiple Booleans For State,Lines 93-93,3
+788,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\AppIDE\components\AppSettings\components\PageSettings.tsx,Multiple Booleans For State,Lines 108-108,3
+789,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\AppIDE\components\AppSettings\components\PageSettings.tsx,Multiple Booleans For State,Lines 111-111,3
+814,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\Applications\ApplicationCard.tsx,Multiple Booleans For State,Lines 114-114,3
+815,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\Applications\ApplicationCard.tsx,Multiple Booleans For State,Lines 119-119,3
+816,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\Applications\ApplicationCard.tsx,Multiple Booleans For State,Lines 120-120,3
+817,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\Applications\ApplicationCard.tsx,Multiple Booleans For State,Lines 122-122,3
+831,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\AppViewer\Navigation\TopStacked.tsx,Multiple Booleans For State,Lines 28-28,3
+832,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\AppViewer\Navigation\TopStacked.tsx,Multiple Booleans For State,Lines 29-29,3
+833,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\AppViewer\Navigation\TopStacked.tsx,Multiple Booleans For State,Lines 30-30,3
+834,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\AppViewer\Navigation\TopStacked.tsx,Multiple Booleans For State,Lines 31-31,3
+835,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\AppViewer\Navigation\TopStacked.tsx,Multiple Booleans For State,Lines 32-32,3
+848,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\common\SearchBar\EntitySearchBar.tsx,Multiple Booleans For State,Lines 61-61,3
+849,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\common\SearchBar\EntitySearchBar.tsx,Multiple Booleans For State,Lines 62-62,3
+850,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\common\SearchBar\EntitySearchBar.tsx,Multiple Booleans For State,Lines 63-63,3
+851,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\common\SearchBar\EntitySearchBar.tsx,Multiple Booleans For State,Lines 64-64,3
+852,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\common\SearchBar\EntitySearchBar.tsx,Multiple Booleans For State,Lines 66-66,3
+853,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\pages\common\SearchBar\EntitySearchBar.tsx,Multiple Booleans For State,Lines 68-68,3
+1335,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\widgets\CameraWidget\component\index.tsx,Multiple Booleans For State,Lines 286-286,3
+1336,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\widgets\CameraWidget\component\index.tsx,Multiple Booleans For State,Lines 288-288,3
+1337,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\widgets\CameraWidget\component\index.tsx,Multiple Booleans For State,Lines 883-883,3
+1338,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\widgets\CameraWidget\component\index.tsx,Multiple Booleans For State,Lines 884-884,3
+1339,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\widgets\CameraWidget\component\index.tsx,Multiple Booleans For State,Lines 889-889,3
+1340,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\widgets\CameraWidget\component\index.tsx,Multiple Booleans For State,Lines 890-890,3
+1341,D:\temp\ws-vscode\Qualidade\appsmith\app\client\src\widgets\CameraWidget\component\index.tsx,Multiple Booleans For State,Lines 891-891,3

@@ -2,8 +2,8 @@ import type { MutableRefObject } from "react";
 import React from "react";
 
 export enum DIRECTION {
-  vertical,
-  horizontal,
+  vertical = 0,
+  horizontal = 1,
 }
 
 export interface CallbackResponseType {

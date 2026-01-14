@@ -3,8 +3,10 @@ import styled from "styled-components";
 import _ from "lodash";
 import { animated, useSpring, to } from "react-spring";
 
+export type ScrollMode = "DARK" | "LIGHT";
+
 export const ScrollThumb = styled(animated.div)<{
-  mode?: "DARK" | "LIGHT";
+  mode?: ScrollMode;
 }>`
   position: relative;
   width: 4px;
@@ -23,7 +25,7 @@ const ScrollTrack = styled.div<{
   top?: string;
   bottom?: string;
   right?: string;
-  mode?: "DARK" | "LIGHT";
+  mode?: ScrollMode;
 }>`
   position: absolute;
   z-index: 100;
@@ -50,7 +52,7 @@ interface Props {
   right?: string;
   alwaysShowScrollbar?: boolean;
   showScrollbarOnlyOnHover?: boolean;
-  mode?: "DARK" | "LIGHT";
+  mode?: ScrollMode;
 }
 
 function ScrollIndicator({

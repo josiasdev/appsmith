@@ -19,7 +19,12 @@ const Variables = css`
   --input-height: 24px;
 `;
 
-const getSizes = (size: InputSizes, component: "input" | "textarea") => {
+export enum InputComponent {
+  Input = "input",
+  Textarea = "textarea",
+}
+
+const getSizes = (size: InputSizes, component: InputComponent) => {
   const Sizes = {
     sm: css`
       --input-padding-x: var(--ads-v2-spaces-2);
@@ -41,7 +46,7 @@ const getSizes = (size: InputSizes, component: "input" | "textarea") => {
 export const MainContainer = styled.div<{
   labelPosition?: "top" | "left";
   size?: InputSizes;
-  component: "input" | "textarea";
+  component: InputComponent;
 }>`
   ${Variables};
 
@@ -147,7 +152,7 @@ export const StyledInput = styled.input<{
   UNSAFE_height?: string;
   hasStartIcon?: boolean;
   hasEndIcon?: boolean;
-  renderer?: "input" | "textarea";
+  renderer?: InputComponent;
   inputSize?: InputSizes;
   hasPostfix?: boolean;
   postfixSize?: number;

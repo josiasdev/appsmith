@@ -8,10 +8,10 @@ import { Icon, Text, Tooltip } from "@appsmith/ads";
 
 // I honestly can't think of a better name for this enum
 export enum Activities {
-  HOVERING,
-  SELECTED,
-  ACTIVE,
-  NONE,
+  HOVERING = 0,
+  SELECTED = 1,
+  ACTIVE = 2,
+  NONE = 3,
 }
 
 const WidgetNameBoundary = 1;

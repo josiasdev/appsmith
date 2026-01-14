@@ -173,6 +173,7 @@ class DBOrMostPopularPlugins extends React.Component<Props> {
           history.replace(URL);
           this.goToCreateDatasource(pluginId, pluginName, {
             skipValidPluginCheck: true,
+            type: plugin.type,
           });
         });
 
@@ -182,7 +183,7 @@ class DBOrMostPopularPlugins extends React.Component<Props> {
 
     this.props.createTempDatasource({
       pluginId,
-      type: params!.type!,
+      type: params.type,
     });
   };
 

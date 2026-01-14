@@ -1,17 +1,17 @@
 import React from "react";
 
 export enum Indices {
-  Layer0,
-  Layer1,
-  Layer2,
-  Layer3,
-  Layer4,
-  Layer5,
-  Layer6,
-  Layer7,
-  Layer8,
-  Layer9,
-  Layer10,
+  Layer0 = 0,
+  Layer1 = 1,
+  Layer2 = 2,
+  Layer3 = 3,
+  Layer4 = 4,
+  Layer5 = 5,
+  Layer6 = 6,
+  Layer7 = 7,
+  Layer8 = 8,
+  Layer9 = 9,
+  Layer10 = 10,
   Layer21 = 21,
   LayerMax = 99999,
 }
