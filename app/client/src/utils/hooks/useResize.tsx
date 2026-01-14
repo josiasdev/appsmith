@@ -1,15 +1,22 @@
 import type { MutableRefObject } from "react";
 import React from "react";
 
+
 export enum DIRECTION {
+<<<<<<< HEAD
   vertical = 0,
   horizontal = 1,
+=======
+  VERTICAL = "vertical",     // Explicit and readable value
+  HORIZONTAL = "horizontal", // Regardless of the order
+>>>>>>> 7a937b588348872797711890f56b2e9edc6835d3
 }
 
 export interface CallbackResponseType {
   height: number;
   width: number;
 }
+
 
 function useResize(
   ref: MutableRefObject<HTMLElement | null>,
